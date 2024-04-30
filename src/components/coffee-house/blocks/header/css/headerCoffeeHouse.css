@@ -1,0 +1,12 @@
+.header {
+    background-image: url('../../../img/main-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1440px;
+    height: 640px;
+    margin: 0 auto;
+}
+.nav {
+    margin-left: 50px;
+}

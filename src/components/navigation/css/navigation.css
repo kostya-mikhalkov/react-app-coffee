@@ -1,0 +1,26 @@
+
+.header-nav {
+    display: flex;
+    align-items: flex-end;
+    width: 355px;
+    height: 35px;
+    justify-content: space-between;
+}
+.btn-nav {
+    border: 0;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    font-family: "Merienda", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: rgb(36, 29, 29);
+    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.header-nav > .btn-nav:first-of-type::before {
+    content: url('../../coffee-house/svg/coffee.svg');
+    display: inline-block;
+    vertical-align: bottom;
+    width: 35px;
+    height: 35px;
+}
