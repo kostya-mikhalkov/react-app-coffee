@@ -1,15 +1,25 @@
 import '../css/headerCoffeeHouse.css';
 import Navigation from "../../../../navigation/js/navigation";
+import img from '../img/Beans-logo.png';
 
 export default function HeaderCoffeeHouse() {
     return (
         <section className="header">
             <Navigation className="nav" />
-            <div className="header-about">
-                <h1 className="header-title">
+            <div className="about">
+                <h1 className="about-title">
                     Everything You Love About Coffee
                 </h1>
-                <img src="./" alt="" className="header-img" />
+                <img src={img} alt="pictures" className="about-img" />
+                <p className="about-text">
+                     We makes every day full of energy and taste
+                </p>
+                <p className="about-text">
+                     Want to try our beans?
+                </p>
+                <button className="about-btn">
+                     More
+                </button>
             </div>
         </section>
     )
