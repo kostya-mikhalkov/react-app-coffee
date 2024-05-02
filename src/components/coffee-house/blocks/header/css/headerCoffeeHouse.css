@@ -5,6 +5,7 @@
     background-repeat: no-repeat;
     width: 100vw;
     height: 640px;
+    overflow-x: hidden;
 }
 .nav {
     padding-left: 130px;

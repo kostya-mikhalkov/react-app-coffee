@@ -1,0 +1,27 @@
+.ourBest {
+    width: 100vw;
+    height: 495px;
+    background-image: url('../../../img/footer-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.ourBest-wrapp {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    gap: 39px;
+}
+.ourBest-title {
+    font-weight: 400;
+    font-size: 24px;
+    margin: 0;
+}
+.ourBest-box {
+    margin: 0 auto;
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+}

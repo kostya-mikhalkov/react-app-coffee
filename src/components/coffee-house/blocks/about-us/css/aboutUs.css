@@ -1,4 +1,8 @@
 .aboutUs {
+    width: 100vw;
+    overflow-x: hidden;
+}
+.aboutUs-box {
     width: 589px;
     margin: 0 auto;
     padding: 80px 0 101px 0;
