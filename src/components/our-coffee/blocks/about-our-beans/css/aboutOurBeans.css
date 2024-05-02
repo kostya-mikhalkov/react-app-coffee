@@ -1,0 +1,35 @@
+.about {
+    margin: 0 auto;
+    display: flex;
+    width: 697px;
+    justify-content: space-between;
+    margin-top: 70px;
+    margin-bottom: 60px;
+}
+.about-title {
+    font-weight: 400;
+    font-size: 24px;
+    color: #000;
+}
+.about-text {
+    width: 346px;
+    height: 242px;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: #000;
+}
+.about-img {
+    width: 272px;
+    height: 355px;
+}
+.about-img > img {
+    width: 100%;
+    object-fit: cover;
+}
+.line {
+    margin: 0 auto;
+    border: 1px solid #000;
+    width: 240px;
+    height: 0px;
+}
