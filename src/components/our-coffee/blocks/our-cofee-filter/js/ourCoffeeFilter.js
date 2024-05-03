@@ -14,24 +14,34 @@ class OurCoffeeFilter extends Component {
         this.state = {
             arr: [
                 {id:1, name: 'AROMISTICO Coffee 1 kg', src: card1, country: 'Brazil', price: 6.99},
-                {id:2, name: 'AROMISTICO Coffee 1 kg', src: card2, country: 'Brazil', price: 6.99},
+                {id:2, name: 'AROMISTICO Tesy 1 kg', src: card2, country: 'Brazil', price: 6.99},
                 {id:3, name: 'AROMISTICO Coffee 1 kg', src: card3, country: 'Brazil', price: 6.99},
                 {id:4, name: 'AROMISTICO Coffee 1 kg', src: card1, country: 'Kenya', price: 10.99},
                 {id:5, name: 'AROMISTICO Coffee 1 kg', src: card2, country: 'Brazil', price: 6.99},
                 {id:6, name: 'AROMISTICO Coffee 1 kg', src: card3, country: 'Kenya', price: 8.99}
-            ]
+            ],
+            valueSearch: ''
         }
+        this.changeSearchInput = this.changeSearchInput.bind(this);
+    }
+
+    changeSearchInput(e) {
+        this.setState({
+            valueSearch: e.currentTarget.value
+        })
     }
 
     render() {
        const newArr = [...this.state.arr];
-       const elements = newArr.map(({name, src, country, price, id}) => {
+       const elements = newArr
+                        .filter(item => item.name.indexOf(this.state.valueSearch) > -1)
+                        .map(({name, src, country, price, id}) => {
         return <CardFilter key={id} name={name} src={src} country={country} price={price}/>
        })
         return(
             <div className='coffee-filter'>
                 <div className="panel">
-                    <SearchPanel />
+                    <SearchPanel onChanged={this.changeSearchInput}/>
                     <FilterButtons />
                 </div>
                 <div className="card">

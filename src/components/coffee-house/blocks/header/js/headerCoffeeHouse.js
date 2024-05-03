@@ -1,6 +1,6 @@
 import '../css/headerCoffeeHouse.css';
 import Navigation from "../../../../navigation/js/navigation";
-import img from '../img/Beans-logo.png';
+import img from '../../../svg/beans-logo-white.svg';
 
 export default function HeaderCoffeeHouse() {
     return (
