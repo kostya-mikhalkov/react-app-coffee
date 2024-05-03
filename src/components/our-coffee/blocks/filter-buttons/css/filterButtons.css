@@ -1,0 +1,29 @@
+.filter {
+    min-width: 326px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+.filter-text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+}
+.btn-box {
+    display: flex;
+    gap: 5px;
+}
+.btn-filter {
+    font-family: 'Montserat', serif;
+    border: none;
+    outline: transparent;
+    width: 75px;
+    height: 30px;
+    font-weight: 400;
+    font-size: 12px;
+    border-radius: 4px 0 0 4px;
+    box-shadow: 4px 4px 20px 0 rgba(0, 0, 0, 0.25);
+    background: #fff;
+    cursor: pointer;
+}

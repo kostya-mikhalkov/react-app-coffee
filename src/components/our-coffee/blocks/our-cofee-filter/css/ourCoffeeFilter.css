@@ -1,0 +1,18 @@
+.coffee-filter {
+    width: 800px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    margin:  0 auto;
+}
+.panel {
+    display: flex;
+    justify-content: center;
+    gap: 83px;
+    margin-bottom: 60px;
+}
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 60px;
+}
