@@ -14,15 +14,17 @@ class OurCoffeeFilter extends Component {
         this.state = {
             arr: [
                 {id:1, name: 'AROMISTICO Coffee 1 kg', src: card1, country: 'Brazil', price: 6.99},
-                {id:2, name: 'AROMISTICO Tesy 1 kg', src: card2, country: 'Brazil', price: 6.99},
+                {id:2, name: 'AROMISTICO Tesy 1 kg', src: card2, country: 'Columbia', price: 6.99},
                 {id:3, name: 'AROMISTICO Coffee 1 kg', src: card3, country: 'Brazil', price: 6.99},
                 {id:4, name: 'AROMISTICO Coffee 1 kg', src: card1, country: 'Kenya', price: 10.99},
-                {id:5, name: 'AROMISTICO Coffee 1 kg', src: card2, country: 'Brazil', price: 6.99},
+                {id:5, name: 'AROMISTICO Coffee 1 kg', src: card2, country: 'Columbia', price: 6.99},
                 {id:6, name: 'AROMISTICO Coffee 1 kg', src: card3, country: 'Kenya', price: 8.99}
             ],
-            valueSearch: ''
+            valueSearch: '',
+            valueFilter: ''
         }
         this.changeSearchInput = this.changeSearchInput.bind(this);
+        this.changeFilter = this.changeFilter.bind(this);
     }
 
     changeSearchInput(e) {
@@ -31,21 +33,36 @@ class OurCoffeeFilter extends Component {
         })
     }
 
+    changeFilter(e) {
+        this.setState({
+            valueFilter: e.currentTarget.innerText
+        })
+        const arr = document.querySelectorAll('.btn-filter');
+        arr.forEach(item => item.classList.remove('active'));
+        e.target.classList.add('active');
+    }
+
+    searchElements = (arr, item) => {
+        if (item.length <= 0) {
+            return arr;
+        }
+        return arr.filter(items => items.name.indexOf(item) > -1);
+    } 
+
+    filterRenderElement = (arr, val) => {
+        return (val !== "All" && val !== '') ? arr.filter(item => item.country === val) : arr;
+    }
+
     render() {
-       const newArr = [...this.state.arr];
-       const elements = newArr
-                        .filter(item => item.name.indexOf(this.state.valueSearch) > -1)
-                        .map(({name, src, country, price, id}) => {
-        return <CardFilter key={id} name={name} src={src} country={country} price={price}/>
-       })
+    const arr = this.filterRenderElement(this.searchElements(this.state.arr, this.state.valueSearch), this.state.valueFilter);
         return(
             <div className='coffee-filter'>
                 <div className="panel">
                     <SearchPanel onChanged={this.changeSearchInput}/>
-                    <FilterButtons />
+                    <FilterButtons onChangeFilter={this.changeFilter}/>
                 </div>
                 <div className="card">
-                    {elements}
+                    <CardFilter data={arr}/>
                 </div>
             </div>
         )
