@@ -5,7 +5,7 @@ import img from '../../../svg/beans-logo-white.svg';
 export default function HeaderCoffeeHouse() {
     return (
         <section className="header">
-            <Navigation className="nav" />
+            <Navigation className="header-nav nav" />
             <div className="about">
                 <h1 className="about-title">
                     Everything You Love About Coffee

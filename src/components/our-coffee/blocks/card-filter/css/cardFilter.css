@@ -8,6 +8,7 @@
     background: rgba(255, 255, 255, 0.65);
     border-radius: 8px;
     box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.25);
+    cursor: pointer;
 }
 .card-descr {
     font-weight: 400;
@@ -26,4 +27,39 @@
     font-size: 14px;
     margin-left: auto;
     padding-right: 20px;
+}
+.about {
+    margin: 0 auto;
+    display: flex;
+    width: 850px;
+    justify-content: space-between;
+    margin-top: 70px;
+    margin-bottom: 60px;
+}
+.about-title {
+    font-weight: 400;
+    font-size: 24px;
+    color: #000;
+}
+.about-text-card {
+    width: 346px;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: left;
+    color: rgb(0, 0, 0);
+}
+.about-img {
+    width: 392px;
+    height: 355px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-img > img {
+    width: 100%;
+    object-fit: cover;
+}
+.price {
+    font-weight: 400;
+    font-size: 24px;
 }

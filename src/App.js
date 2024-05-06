@@ -1,4 +1,4 @@
-import {Component} from 'react-dom'
+import {Component} from 'react';
 import Navigation from "./components/navigation/js/navigation";
 import CoffeeHouse from './components/coffee-house/js/coffeeHouse';
 import OurCoffee from './components/our-coffee/js/ourCoffee';

@@ -11,7 +11,7 @@ class FilterButtons extends Component {
                     <button className="btn-filter" onClick={(e) => this.props.onChangeFilter(e)}>Brazil</button>
                     <button className="btn-filter" onClick={(e) => this.props.onChangeFilter(e)}>Kenya</button>
                     <button className="btn-filter" onClick={(e) => this.props.onChangeFilter(e)}>Columbia</button>
-                    <button className="btn-filter" onClick={(e) => this.props.onChangeFilter(e)}>All</button>
+                    <button className="btn-filter active" onClick={(e) => this.props.onChangeFilter(e)}>All</button>
                 </div>
             </div>
         )

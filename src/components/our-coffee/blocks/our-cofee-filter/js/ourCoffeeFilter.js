@@ -21,7 +21,8 @@ class OurCoffeeFilter extends Component {
                 {id:6, name: 'AROMISTICO Coffee 1 kg', src: card3, country: 'Kenya', price: 8.99}
             ],
             valueSearch: '',
-            valueFilter: ''
+            valueFilter: '',
+            activeCard: null
         }
         this.changeSearchInput = this.changeSearchInput.bind(this);
         this.changeFilter = this.changeFilter.bind(this);
@@ -53,8 +54,15 @@ class OurCoffeeFilter extends Component {
         return (val !== "All" && val !== '') ? arr.filter(item => item.country === val) : arr;
     }
 
+    clickedCards = (e) => {
+        this.setState({
+            activeCard: e.target.getAttribute('data-id')
+        })
+    }
+
     render() {
-    const arr = this.filterRenderElement(this.searchElements(this.state.arr, this.state.valueSearch), this.state.valueFilter);
+        const active = this.state.activeCard;
+        const arr = this.filterRenderElement(this.searchElements(this.state.arr, this.state.valueSearch), this.state.valueFilter);
         return(
             <div className='coffee-filter'>
                 <div className="panel">
@@ -62,7 +70,7 @@ class OurCoffeeFilter extends Component {
                     <FilterButtons onChangeFilter={this.changeFilter}/>
                 </div>
                 <div className="card">
-                    <CardFilter data={arr}/>
+                    <CardFilter data={arr} onClicked={this.clickedCards} active={active}/>
                 </div>
             </div>
         )
