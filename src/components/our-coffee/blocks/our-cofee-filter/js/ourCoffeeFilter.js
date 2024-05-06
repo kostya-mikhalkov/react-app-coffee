@@ -58,6 +58,7 @@ class OurCoffeeFilter extends Component {
         this.setState({
             activeCard: e.target.getAttribute('data-id')
         })
+        this.props.onChanged(e);
     }
 
     render() {
