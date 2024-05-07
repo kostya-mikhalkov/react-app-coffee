@@ -1,8 +1,7 @@
 import '../css/aboutOurBeans.css';
-import src from '../../../img/main-coffee.jpg';
 import img from '../../../../coffee-house/svg/beans-logo-black.svg';
 
-export default function AboutOurBeans() {
+export default function AboutOurBeans({src}) {
     return (
         <>
             <section className="about">

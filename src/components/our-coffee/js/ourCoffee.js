@@ -11,6 +11,7 @@ import '../css/ourCoffee.css';
 import card1 from '../../coffee-house/img/card1.jpg';
 import card2 from '../../coffee-house/img/card2.jpg';
 import card3 from '../../coffee-house/img/card3.jpg';
+import src from '../../our-coffee/img/main-coffee.jpg';
 
 class OurCoffee extends Component {
     constructor(props) {
@@ -43,7 +44,7 @@ class OurCoffee extends Component {
                     } else {
                         return (
                             <>
-                                <AboutOurBeans />
+                                <AboutOurBeans src={src}/>
                                 <OurCoffeeFilter onChanged={this.changed}/>
                             </>
                         )
