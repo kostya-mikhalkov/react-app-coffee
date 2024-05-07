@@ -1,0 +1,8 @@
+.header-pleasure {
+        width: 100vw;
+        height: 260px;
+        background-image: url('../img/pleasure.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+}
