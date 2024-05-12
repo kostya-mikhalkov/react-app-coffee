@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/kostya-mikhalkov/react-app-coffee/static/css/main.5f84101c.css",
+    "main.js": "/kostya-mikhalkov/react-app-coffee/static/js/main.0bc36d70.js",
+    "static/js/453.ed3810f9.chunk.js": "/kostya-mikhalkov/react-app-coffee/static/js/453.ed3810f9.chunk.js",
+    "static/media/footer-bg.jpg": "/kostya-mikhalkov/react-app-coffee/static/media/footer-bg.c3e13550bc3cd199e2ab.jpg",
+    "static/media/main-bg.jpg": "/kostya-mikhalkov/react-app-coffee/static/media/main-bg.1d197891903771645f3d.jpg",
+    "static/media/header-bg.jpg": "/kostya-mikhalkov/react-app-coffee/static/media/header-bg.f2f38c62f07be02b8b63.jpg",
+    "static/media/pleasure.jpg": "/kostya-mikhalkov/react-app-coffee/static/media/pleasure.9309b6cb3fc03412764a.jpg",
+    "static/media/main-coffee.jpg": "/kostya-mikhalkov/react-app-coffee/static/media/main-coffee.d7013165e772e6207355.jpg",
+    "static/media/pleasure-about.jpg": "/kostya-mikhalkov/react-app-coffee/static/media/pleasure-about.26508c9c16a83ec0f08c.jpg",
+    "static/media/card2.jpg": "/kostya-mikhalkov/react-app-coffee/static/media/card2.bb89b2ed96314aefadc4.jpg",
+    "static/media/card1.jpg": "/kostya-mikhalkov/react-app-coffee/static/media/card1.0adfa2c91bf177bd9669.jpg",
+    "static/media/card3.jpg": "/kostya-mikhalkov/react-app-coffee/static/media/card3.3d8f1142ffb78938700d.jpg",
+    "static/media/coffee.svg": "/kostya-mikhalkov/react-app-coffee/static/media/coffee.ff8be8f616203641612d.svg",
+    "static/media/small-black-logo.svg": "/kostya-mikhalkov/react-app-coffee/static/media/small-black-logo.ea6c9476c3c728c6378e.svg",
+    "static/media/beans-logo-black.svg": "/kostya-mikhalkov/react-app-coffee/static/media/beans-logo-black.1efb89dfcb25b011b06dc6dc15e2077e.svg",
+    "index.html": "/kostya-mikhalkov/react-app-coffee/index.html",
+    "main.5f84101c.css.map": "/kostya-mikhalkov/react-app-coffee/static/css/main.5f84101c.css.map",
+    "main.0bc36d70.js.map": "/kostya-mikhalkov/react-app-coffee/static/js/main.0bc36d70.js.map",
+    "453.ed3810f9.chunk.js.map": "/kostya-mikhalkov/react-app-coffee/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5f84101c.css",
+    "static/js/main.0bc36d70.js"
+  ]
+}
