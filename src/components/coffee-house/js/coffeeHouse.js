@@ -7,13 +7,20 @@ import Footer from "../blocks/footer/js/footer";
 
 import '../css/coffeeHouse.css';
 
-export default function CoffeeHouse() {
-    return (
-        <div className="coffee-house">
-            <HeaderCoffeeHouse />
-            <AboutUs />
-            <OurBest />
-            <Footer />
-        </div>
-    )
+class CoffeeHouse extends Component {
+    constructor(props) {
+        super(props);
+    }
+
+    render(){
+        return (
+            <div className="coffee-house">
+                <HeaderCoffeeHouse onClicked={this.props.onClicked} />
+                <AboutUs />
+                <OurBest />
+                <Footer />
+            </div>
+        )
+    }
 }
+export default CoffeeHouse;

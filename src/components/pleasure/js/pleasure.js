@@ -36,7 +36,7 @@ class Pleasure extends Component {
     render() {
         return (
             <>
-                <HeaderOurCoffee title={'For your pleasure'} clasess={'header-pleasure'}/>
+                <HeaderOurCoffee title={'For your pleasure'} clasess={'header-pleasure'} onClicked={this.props.onClicked}/>
                 <AboutOurBeans src={src}/>
                 <PleasureCard data={this.state.arr} 
                               active={this.state.activeCard} 

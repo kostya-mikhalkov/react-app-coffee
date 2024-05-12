@@ -35,9 +35,10 @@ class OurCoffee extends Component {
         })
     }
     render() {
+        console.log(this.props.onClicked)
         return (
             <div className="our-coffee">
-                <HeaderOurCoffee title='Our Coffee' clasess={"header"}/>
+                <HeaderOurCoffee title='Our Coffee' clasess={"header"} onClicked={this.props.onClicked}/>
                 {(() => {
                     if (this.state.activity !== null) {
                         return (<CardFilter data={this.state.arr} onClicked={this.changed} active={this.state.activity}/>)

@@ -20,4 +20,8 @@
 }
 .footer-nav {
     padding: 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: flex-end;
 }
